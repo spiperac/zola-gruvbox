@@ -1,5 +1,5 @@
 # zola-gruvbox
-![alt zola gruvbox screenshot](./screenshot.png.png)
+![alt zola gruvbox screenshot](./screenshot.png)
 
 ## Installation
 
