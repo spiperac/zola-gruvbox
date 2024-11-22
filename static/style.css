@@ -1,0 +1,92 @@
+
+/* General Styles */
+body {
+    background-color: #1d2021; 
+    color: #ebdbb2;           /* Light Gruvbox foreground */
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #d79921;           /* Yellow Gruvbox for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fabd2f;           /* Brighter yellow for hover */
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #1d2021; 
+    /* background-color: #3c3836; /* Darker for header */
+    padding: 1em;
+    text-align: center;
+    /* border-bottom: 1px solid #504945; */
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 1em;
+}
+
+header li {
+    display: inline;
+}
+
+/* Container */
+.container {
+    max-width: 40%;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #504945; /* Terminal-like border */
+    background-color: #282828; /* Dark Gruvbox background */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1d2021; 
+    color: #a89984;
+    font-size: 0.9em;
+}
+
+/* Posts */
+h1, h2, h3 {
+    color: #fabd2f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background: #32302f;
+    border: 1px solid #504945;
+    border-radius: 5px;
+}
+
+li h2 {
+    margin: 0;
+}
+
+li p {
+    margin: 0.5em 0 0 0;
+}
+
+/* Highlighting for terminal-style look */
+code {
+    background-color: #3c3836;
+    color: #b8bb26;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
