@@ -85,8 +85,29 @@ li p {
 
 /* Highlighting for terminal-style look */
 code {
-    background-color: #3c3836;
     color: #b8bb26;
     padding: 0.2em 0.4em;
     border-radius: 4px;
+    white-space: pre-wrap; /* Wraps lines */
+    word-wrap: break-word; /* Breaks long words */
 }
+
+
+/* Remove background from the code element inside pre */
+pre code {
+    background: none; /* Removes the inner code background */
+    color: inherit;   /* Ensures text color is consistent */
+    font-size: inherit; /* Matches parent font size */
+}
+
+/* Apply the desired background and styling only to pre */
+pre {
+    background-color: #282828; /* Gruvbox dark background */
+    color: #ebdbb2;           /* Gruvbox light foreground */
+    padding: 10px;            /* Adds padding inside the code block */
+    border-radius: 4px;       /* Rounded corners for a smoother look */
+    overflow-x: auto;         /* Horizontal scrolling for long lines */
+    margin: 20px 0;           /* Space above and below code blocks */
+    border: 1px solid #3c3836; /* Subtle border to differentiate block */
+}
+
