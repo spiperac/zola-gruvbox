@@ -117,7 +117,7 @@ pre {
 
 @font-face {
     font-family: "Hack Nerd Font";
-    src: url("{{ get_url(path="fonts/HackNerdFont-Regular.ttf") }}") format("truetype");
+    src: "fonts/HackNerdFont-Regular.ttf";
     font-weight: normal;
     font-style: normal;
 }
