@@ -9,8 +9,12 @@ body {
 }
 
 a {
-    color: #d79921;           /* Yellow Gruvbox for links */
+    color: #b8bb26;           /* Yellow Gruvbox for links */
     text-decoration: none;
+}
+
+menu-a {
+    color: #d79921; /* Gruvbox orange */
 }
 
 a:hover {
@@ -21,7 +25,6 @@ a:hover {
 /* Header */
 header {
     background-color: #1d2021; 
-    /* background-color: #3c3836; /* Darker for header */
     padding: 1em;
     text-align: center;
     /* border-bottom: 1px solid #504945; */
