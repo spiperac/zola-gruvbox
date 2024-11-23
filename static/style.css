@@ -117,7 +117,7 @@ pre {
 
 @font-face {
     font-family: "Hack Nerd Font";
-    src: "fonts/HackNerdFont-Regular.ttf";
+    src: url("/fonts/Hack-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
