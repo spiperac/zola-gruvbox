@@ -126,3 +126,19 @@ pre {
 .icon {
     font-family: "Hack Nerd Font", monospace;
 }
+
+
+/* Ensure images do not overflow the post body */
+.post-body img {
+    max-width: 100%; /* Restrict the image width to its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline image spacing */
+    margin: 0 auto; /* Center images horizontally (optional) */
+}
+
+/* Optional: Add padding or margins around images */
+.post-body img {
+    padding: 10px;
+    border: 1px solid #333; /* Optional: Add a border for better visual separation */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
