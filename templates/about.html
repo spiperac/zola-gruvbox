@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
 <h1>About Me</h1>
-<p>This is a page about me, my interests, and my professional journey.</p>
+
+{{ page.content | safe }}
+
 {% endblock %}
 
