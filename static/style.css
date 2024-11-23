@@ -111,3 +111,14 @@ pre {
     border: 1px solid #3c3836; /* Subtle border to differentiate block */
 }
 
+
+@font-face {
+    font-family: "Hack Nerd Font";
+    src: url("{{ get_url(path="fonts/HackNerdFont-Regular.ttf") }}") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: "Hack Nerd Font", monospace;
+}
