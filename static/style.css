@@ -35,7 +35,7 @@ header ul {
     margin: 0;
     padding: 0;
     display: inline-flex;
-    gap: 1em;
+    /* gap: 1em; */
 }
 
 header li {
@@ -48,7 +48,7 @@ header li {
     width: 88%;
     margin: 2em auto;
     padding: 1em;
-    border: 1px solid #504945; /* Terminal-like border */
+    /* border: 1px solid #504945; /* Terminal-like border */
     background-color: #282828; /* Dark Gruvbox background */
 }
 
@@ -75,8 +75,7 @@ li {
     margin-bottom: 1em;
     padding: 0.5em;
     background: #32302f;
-    border: 1px solid #504945;
-    border-radius: 5px;
+    /* border: 1px solid #504945; */
 }
 
 li h2 {
