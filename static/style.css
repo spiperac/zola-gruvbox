@@ -200,7 +200,7 @@ nav {
         font-size: 20px; /* Same size as your icons */
         padding: 5px 10px;
         right: 30px;
-        position: fixed;
+        position: relative;
         cursor: pointer;
         white-space: nowrap; /* Prevent text from wrapping */
         max-width: 100%; /* Prevent the button from exceeding screen width */
