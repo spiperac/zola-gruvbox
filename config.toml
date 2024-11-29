@@ -16,3 +16,7 @@ highlight_theme = "base16-ocean-dark"  # or any theme of your choice[extra]
 # Put all your custom variables here
 projects_page = "/projects/"
 about_page = "/about/"
+
+[extra]
+github = ""
+email = ""

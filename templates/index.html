@@ -7,8 +7,13 @@
     {% set posts = get_section(path="posts/_index.md", ignore_errors=true ) %}
     {% for post in posts.pages %}
     <li>
-        <h2><a href="{{ post.permalink }}" class="icon">󰈔 {{ post.title }}</a></h2>
-        <p class="icon"> {{ post.date | date(format="%Y-%m-%d") }} - 󰥔 {{ post.reading_time }} min read</p><br />
+        <div class="post-title">
+            <h2><a href="{{ post.permalink }}" class="icon">󰈔 {{ post.title }} </a></h2>
+                                <p>  {{ post.date | date(format="%Y-%m-%d") }} </p>
+            </p>
+        </div>
+
+        <p> 󰥔 {{ post.reading_time }} min read</p>
         <p>{{ post.description }}</p> <!-- Use description, as summary isn't automatically available -->
     </li>
     {% endfor %}
