@@ -13,13 +13,17 @@
                     <img class="logo-img" src="{{ get_url(path='icons/avatar.png') }}" >
             </div>
             <div class="main-menu">
-                <ul>
-                    <li><a href="{{ config.base_url }}" class="icon menu-a"> [Home]</a></li>
-                    <li><a href="/projects/" class="icon">󰒓 [Projects]</a></li>
-                    <li><a href="/about/" class="icon">  [About]</a></li>
+                <!-- Menu toggle button (only visible on mobile) -->
+                <ul class="menu-items">
+                    <li><a href="{{ config.base_url }}"> [Home]</a></li>
+                    <li><a href="/projects/">󰒓 [Projects]</a></li>
+                    <li><a href="/about/">  [About]</a></li>
                 </ul>
             </div>
             <div class="social">
+                    <button class="menu-toggle" onclick="toggleMenu()">
+                        menu 
+                    </button>
                     <a href="https://github.com/{{ config.extra.github }}/" target="_blank"> 
                        <img class="social-img"  src="{{ get_url(path='icons/github.svg') }}" >
                     </a>
@@ -38,6 +42,14 @@
         <p>© {{ now() | date(format="%Y") }} {{ config.title }}</p>
     </footer>
 </body>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu-items');
+        menu.classList.toggle('active');
+    }
+</script>
+
 </html>
 
 
