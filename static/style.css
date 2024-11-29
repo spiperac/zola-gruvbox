@@ -29,7 +29,7 @@ header {
     width: 88%;
     border-bottom: 1px solid #b8bb26;
     max-width: 750px;
-    margin: 2em auto;
+    margin: 1em auto; /* put nav and main menu in center */
 }
 
 header ul {
@@ -42,6 +42,39 @@ header ul {
 
 header li {
     display: inline;
+}
+
+nav {
+    display: flex;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+}
+
+.main-menu {
+    list-style-type: none;
+    width: 50%;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.social {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.social-img {
+      width: 20px;
+      height: 20px;
+      vertical-align: bottom;
 }
 
 /* Container */
@@ -76,7 +109,10 @@ ul {
 li {
     margin-bottom: 0em;
     padding: 0.5em;
-    /* border: 1px solid #504945; */
+}
+
+.post-li {
+    /* border-bottom: 1px solid #504945; */
 }
 
 li h2 {
@@ -140,38 +176,7 @@ pre {
     margin: 0 auto; /* Center images horizontally (optional) */
 }
 
-nav {
-    display: flex;
-    padding: 0;
-}
 
-.logo {
-    width: 20%;
-}
-
-.main-menu {
-    list-style-type: none;
-    width: 50%;
-}
-
-.logo-img {
-    width: 50px;
-    height: 50px;
-}
-
-.social {
-    display: flex;
-    align-items: flex-end;
-    margin-left: auto;
-    gap: 10px;
-    padding-bottom: 10px;
-}
-
-.social-img {
-      width: 20px;
-      height: 20px;
-      vertical-align: bottom;
-}
 
 @media screen and (min-width: 769px) {
     .menu-toggle {
@@ -217,16 +222,17 @@ nav {
         right: 10px;
         background: #282828; /* Menu background */
         border: 1px solid #444; /* Optional border */
-        padding: 10px;
+        padding: 5px;
         z-index: 1000;
     }
 
     .menu-items.active {
         display: flex; /* Show menu items when active */
+        text-align: left;  /* Ensure text is aligned left */
     }
 
     .menu-items li {
-        margin: 5px 0; /* Adjust spacing for dropdown items */
+        margin: 0px 0px; /* Adjust spacing for dropdown items */
     }
 
     .social {

@@ -1,19 +1,17 @@
 {% extends "base.html" %}
 
 {% block body %}
-<h1>#~ ll -as</h1>
+<h1># ll -as ~/posts/</h1>
 <p>{{ section.content | safe }}</p> <!-- Use section.content for the homepage content -->
 <ul>
     {% set posts = get_section(path="posts/_index.md", ignore_errors=true ) %}
     {% for post in posts.pages %}
-    <li>
+    <li class="post-li">
         <div class="post-title">
             <h2><a href="{{ post.permalink }}" class="icon">󰈔 {{ post.title }} </a></h2>
-                                <p>  {{ post.date | date(format="%Y-%m-%d") }} </p>
-            </p>
         </div>
 
-        <p> 󰥔 {{ post.reading_time }} min read</p>
+        <p> {{ post.date | date(format="%Y-%m-%d") }} | 󰥔 {{ post.reading_time }} min read</p>
         <p>{{ post.description }}</p> <!-- Use description, as summary isn't automatically available -->
     </li>
     {% endfor %}
