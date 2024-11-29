@@ -178,13 +178,29 @@ nav {
 
 /* Mobile: Hide full menu by default, show [menu] button */
 @media screen and (max-width: 768px) {
+    .post-title {
+        display: inline;
+    }
+
+    .post-title h2 {
+        font-size: 1.2rem; /* Adjust as needed */
+    }
+
+    .post-title p {
+        font-size: 0.9rem;
+        right: 20px;
+    }
+
     .menu-toggle {
         display: flex; /* Show the toggle button on mobile */
+        font-family: "Hack Nerd Font", monospace;
         background: none;
         border: 1px solid #b8bb26; /* White border like your menu items */
         color: #b8bb26;
         font-size: 20px; /* Same size as your icons */
         padding: 5px 10px;
+        right: 30px;
+        position: fixed;
         cursor: pointer;
         white-space: nowrap; /* Prevent text from wrapping */
         max-width: 100%; /* Prevent the button from exceeding screen width */
