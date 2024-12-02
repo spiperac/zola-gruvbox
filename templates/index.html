@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block body %}
-<h1># ll -as ~/posts/</h1>
 <p>{{ section.content | safe }}</p> <!-- Use section.content for the homepage content -->
 <ul>
     {% set posts = get_section(path="posts/_index.md", ignore_errors=true ) %}
@@ -12,7 +11,6 @@
         </div>
 
         <p> {{ post.date | date(format="%Y-%m-%d") }} | 󰥔 {{ post.reading_time }} min read</p>
-        <p>{{ post.description }}</p> <!-- Use description, as summary isn't automatically available -->
     </li>
     {% endfor %}
 </ul>
