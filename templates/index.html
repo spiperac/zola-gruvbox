@@ -11,6 +11,11 @@
         </div>
 
         <p> {{ post.date | date(format="%Y-%m-%d") }} | 󰥔 {{ post.reading_time }} min read</p>
+        <p>
+        {% for tag in post.taxonomies.tags %}
+        <a href="/tags/{{ tag }}"> {{ tag }}</a>
+        {% endfor %}
+        </p>
     </li>
     {% endfor %}
 </ul>
