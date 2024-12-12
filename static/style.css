@@ -163,11 +163,36 @@ pre {
     font-family: "Hack Nerd Font", monospace;
 }
 
-.post-title {
+.post-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.title-read-time {
+    display: inline-flex;
+    align-items: center;
+}
+
+.post-title {
+    margin: 0;
+}
+
+.post-read-time {
+    margin-left: 10px; /* Spacing between title and read time */
+    font-size: 0.9em; /* Slightly smaller font for read time */
+    color: #666; /* Optional: lighter color for differentiation */
+}
+
+.post-date {
+    white-space: nowrap; /* Ensure it stays in a single line */
+    color: #999;
+}
+
+
+.tag {
+  font-size: 13px;
+}
 /* Ensure images do not overflow the post body */
 .post-body img {
     max-width: 100%; /* Restrict the image width to its container */
