@@ -1,7 +1,7 @@
 
 /* General Styles */
 body {
-    background-color: #1d2021; 
+    background-color: #1c1b1b; 
     color: #ebdbb2;           /* Light Gruvbox foreground */
     font-family: "Hack Nerd Font", monospace;
     margin: 0;
@@ -24,7 +24,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #1d2021; 
+    background-color: #1c1b1b; 
     text-align: center;
     width: 88%;
     border-bottom: 1px solid #b8bb26;
@@ -91,9 +91,9 @@ nav {
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #1d2021; 
+    background-color: #1c1b1b; 
     color: #a89984;
-    font-size: 0.9em;
+    font-size: 1.0em;
 }
 
 /* Posts */
