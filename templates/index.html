@@ -7,23 +7,22 @@
     {% set posts = get_section(path="posts/_index.md", ignore_errors=true ) %}
     {% for post in posts.pages %}
     <li class="post-li">
-        <div class="post-header">
-          <div class="title-read-time">
-            <h2 class="post-title">
-              <a href="{{ post.permalink }}" class="icon">{{ post.title }}</a>
-            </h2>
-            <span class="post-read-time">󰥔 {{ post.reading_time }} min read</span>
-          </div>
-          <p class="post-date"> {{ post.date | date(format="%Y-%m-%d") }}</p>
+       <div class="post-header">
+        <div class="title-read-time">
+          <h2 class="post-title">
+            <a href="{{ post.permalink }}" class="icon">{{ post.title }}</a>
+          </h2>
+          <span class="post-read-time">󰥔 {{ post.reading_time }} min read</span>
         </div>
+        <p class="post-date"> {{ post.date | date(format="%Y-%m-%d") }}</p>
+       </div>
  
-        <p class="post-description">{{ post.description }}</p>
-        <p>
-        {% for tag in post.taxonomies.tags %}
-          <a class="tag" href="/tags/{{ tag }}"> {{ tag }}</a>
-        {% endfor %}
-        </p>
-        <p>-----</p>
+       <p class="post-description">{{ post.description }}</p>
+       <p>
+         {% for tag in post.taxonomies.tags %}
+            <a class="tag" href="/tags/{{ tag }}"> {{ tag }}</a>
+         {% endfor %}
+       </p>
     </li>
     {% endfor %}
 </ul>

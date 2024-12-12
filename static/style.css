@@ -112,7 +112,8 @@ li {
 }
 
 .post-li {
-    /* border-bottom: 1px solid #504945; */
+  border-bottom: 1px dotted #504945;
+  margin-top: 10px;
 }
 
 li h2 {
